@@ -1,0 +1,11 @@
+a = 10;
+Fs = 100;
+Fc = 10;
+dt = 1/Fs;
+t = 0: dt: 2 * Fc;
+ysin = a * sin(2*pi*Fc/Fs * t);
+ycos = a * cos(2*pi*Fc/Fs * t);
+subplot(2,1,1);
+plot(t/Fs, ysin);
+subplot(2,1,2);
+plot(t/Fs, ycos);
